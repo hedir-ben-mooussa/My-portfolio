@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="header/header.html">
     <link rel="stylesheet" href="header/header.css">
-    <title>Prtfolio Hedir</title>
+    <title>Hedir Portfolio</title>
 </head>
 <body>
+    <!-- **** CALL HEADER **** -->
     <div id="header">
         <script>
             fetch('header/header.html')
@@ -20,53 +22,31 @@
                 .catch(error => console.error('Error loading header:', error));
         </script>
     </div>
-    
-    <!-- <nav>
-        <div class="nav-container">
-            <div class="logo">
-                Hedir <span>Ben Moussa</span>
-            </div>
-            <div class="links">
-                <div class="link"><a href="#">Home</a></div>
-                <div class="link"><a href="#">About</a></div>
-                <div class="link"><a href="/skills/skills.html">Skills</a></div>
-                <div class="link"><a href="#">Services</a></div>
-                <div class="link"><a href="#">Contact</a></div>
-            </div>
-            <i class="fa-solid fa-bars hamburg"></i>
-        </div>
-            <div class="dropdown">
-                <div class="links">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Skills</a>
-                <a href="#">Services</a>
-                <a href="#">Contact</a>
-                <i class="fa-solid fa-xmark cancel"></i>
-                </div>   
-            </div>
-        
-       
-    </nav> -->
+    <!-- **** END HEADER CALL **** -->
     <section>
         <div class="main-container">
-            <div class="image">
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000" >
                 <img src="assets/image/hedir.jpg" alt="">
             </div>
             <div class="content">
-                <h1>Hey, i'm <span>Hedir</span></h1>
-                <div class="typewriter">I'm a<span class="typewriter-text"></span><label for=""></label></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam iusto atque, eaque quas sint similique sapiente minima odio necessitatibus sed, magni, velit ipsum nam numquam rem ea quidem! Placeat, mollitia.</p>
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aow-delay="700">Hey, i'm <span>Hedir</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aow-delay="900">I'm a<span class="typewriter-text"></span><label for=""></label></div>
+            <p data-aos="filip-down" data-aos-duration="1500" data-aow-delay="1100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam iusto atque, eaque quas sint similique sapiente minima odio necessitatibus sed, magni, velit ipsum nam numquam rem ea quidem! Placeat, mollitia.</p>
            <div class="social-links">
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aow-delay="1300"><i class="fa-brands fa-github"></i></a>
+            <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aow-delay="1400"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aow-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
            </div>
-           <div class="btn">
+           <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aow-delay="1800">
             <button>Hire me</button>
            </div>
         </div>
         </div>
     </section>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
 </body>
 </html>
